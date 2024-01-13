@@ -30,3 +30,14 @@ g is primitive root then g^2 is, so on and so forth.
 
 ## Primitive Root in this example
 
+## Vanishing Polynomial
+**Why vanishing polynomial is X^N-1?**
+Take 3th root of unity for example aka w^3=1
+<img width="458" alt="截圖 2024-01-13 下午4 32 49" src="https://github.com/NOOMA-42/root_of_unity/assets/35304302/a1b6eccb-5e06-4ae6-9f5d-e1b9dbae8fd6">
+
+1. first step: make all w^3 to 1
+we get: `x^3 - x^2 (1+w+w^2) + x(1+w+w^2) - 1`
+3. second step: 1+w+w^2 is 0
+an intuitive to think about this is through table below, add b^0 to b^10 when b=2, and you get 55 mod 11 = 0
+![ROU Table](../image/ROUtable.png)[Source](https://slideplayer.com/slide/6669460/)
+To be honest I'm not sure how to prove it formally.
